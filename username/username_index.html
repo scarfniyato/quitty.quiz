@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quitty</title>
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="stylecss.css">
+</head>
+
+<script>
+  function wlcm(){
+    var x = 
+      document.getElementById("name").value; 
+      document.getElementById("welcome").innerHTML = 
+        "<img src='wlcm.png' width='1000' height='650'>";
+      document.getElementById("wlcm_text").innerHTML = 
+       "WELCOME TO QUITTY!";
+      document.getElementById("wlcmvalue").innerHTML = x;
+      document.getElementById("divider").innerHTML = "__________"
+      document.getElementById("luck_text").innerHTML = 
+       "We are wishing you luck on your journey!";
+      document.getElementById("startquiz").innerHTML =
+      "<div class='start-button'>" + 
+        "<ul>" +
+          "<li><a href='test1/indextest1.html'>Start Quiz</a></li>" +
+        "</ul>" +
+      "</div>" ;
+      document.getElementById("name").style.display='none';
+      document.getElementById("submit").style.display='none';
+  }
+</script>
+
+<body>
+  <input placeholder="Enter username" id="name" class="input" name="text" type="text">
+  <input type="button" id="submit" value="Submit" class="submit_btn" onclick="return wlcm()">
+  
+    <!--welcometext-->
+    <div id="welcome"></div>
+
+    <div id="wlcm_text"></div>
+    
+    <!--username-->
+    <div id="wlcmvalue"></div>
+
+     <!--divider-->
+    <div id="divider"></div>
+
+    <!--luck text-->
+    <div id="luck_text"></div>
+
+    <!-- start Quiz button-->
+    <div id="startquiz"></div>
+
+      
+    
+  
+
+
+<!--STANDBYYY
+  
+  <div class="welcome">
+    <img src="wlcm.png" width="800" height="550">
+  </div>
+
+  <div class="submit_btn">
+      <ul>
+          <li><a href="test1/indextest1.html">Submit</a></li>
+      </ul>
+-->
+</div>
+</body>
+</html>
