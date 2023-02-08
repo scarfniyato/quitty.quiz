@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quitty</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="favicon.png">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">quitty.</a>
+        <ul>
+            <li><a href="#aboutus">&nbsp;&nbsp;About Us&nbsp;&nbsp;</a></li>
+            <li><a href="https://forms.gle/nxfNP664X3yuMKsB6" target="_blank">&nbsp;&nbsp;Feedback&nbsp;&nbsp;</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind">
+        <h2 id="text">quitty.</h2>
+        <ul>
+            <li><a href="username/username_index.html">START</a></li>
+        </ul>
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+    
+    
+    <div class="sec" id="sec">
+        <a name="aboutus"></a>
+        <h2>About Us</h2>
+        <p>
+            &emsp;&emsp;&emsp;&emsp;
+            <img src="Kaela.png" alt="Kaela's Avatar"
+                width="170" height="170"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <img src="Rianne.png" alt="Rianne's Avatar"
+                width="170" height="170"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <img src="Syra.png" alt="Syra's Avatar"
+                width="170" height="170"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <img src="Elreen.png" alt="Elreen's Avatar"
+                width="170" height="170"> 
+            &emsp;&emsp;&emsp;&emsp;
+        </p>
+        <h4>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+            Kaela Bonhayag&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            Rianne de Guzman&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            Syra Looc&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            Elreen de Guzman
+        </h4>
+        <br>
+        <br>
+        <div class="abtus_container">
+        <center>
+            <p>
+            Hello there!<br>
+            We are the Quitty team from BSCS 1-2.<br><br>
+            This program was made solely for academic purposes<br>
+            only and as a requirement for our finals to be submitted<br>
+            to <b>Mr. Marlon Pereña</b>.
+            </p>
+        </center>
+        </div>
+        
+    </div>
+    </a>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+</body>
+</html>
